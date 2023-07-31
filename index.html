@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Gif Download: Pixel Art</title>
+</head>
+<body>
+    <div>
+        <img class="fire-gif" src="fire.gif" alt="Gif">
+        <p class="fire-gif-txt">Fire.gif</p>
+    </div>
+    <a class="download-button-a" href="https://raw.githubusercontent.com/DimaSN16/ParkourHtmlByDimaSN16/sas/fire.gif"></a>
+    <button onclick="openPopup()" class="embed-button-css" type="button">Embed</button>
+    <div id="popup" class="popup">
+        <p class="in-container-button-1-p">< img src="https://raw.githubusercontent.com/DimaSN16/ParkourHtmlByDimaSN16/sas/fire.gif" alt="" ></p>
+        <button onclick="closePopup()" type="button" class="close-button-embed-div">Close</button>
+    </div>
+</body>
+<script>
+let popup = document.getElementById("popup")
+
+function openPopup(){
+    popup.classList.add("open-popup")
+}
+function closePopup(){
+    popup.classList.remove("open-popup")
+}
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.fire-gif{
+    width: 130px;
+    position: absolute;
+    top: 350px;
+    right: 200px;
+}
+
+body{
+    background-color: black;
+}
+
+.fire-gif-txt{
+    font-family: 'Roboto', sans-serif;
+    font-size: 23px;
+    position: absolute;
+    top: 470px;
+    right: 227px;
+    color: rgba(255, 255, 255, 1)
+}
+
+.download-button-a{
+    width: 170px;
+    height: 50px;
+    background-image: url(buttons/download1.png);
+    position: absolute;
+    top: 420px;
+    left: 300px;
+}
+.download-button-a:hover{
+    background-image: url(buttons/download1hover.png);
+}
+.download-button-a:active{
+    background-image: url(buttons/download1active.png);
+}
+
+.embed-button-css{
+    padding: 15px 35px;
+    border: 4px solid;
+    border-color: rgb(196, 196, 196);
+    position: absolute;
+    border-radius: 1rem;
+    cursor: pointer;
+    right: 7px;
+    bottom: 5px;
+}
+.embed-button-css:hover{
+    background-color: aliceblue;
+}
+
+.embed-button-css:active{
+    background-color: rgb(223, 240, 255);
+    border-color: rgb(187, 187, 187);
+}
+
+.popup{
+    width: 100vh;
+    height: 70vh;
+    background: #7c7c7c;
+    position: absolute;
+    top: 105px;
+    left: 485px;
+    border: 4px solid;
+    border-color: #444444;
+    border-radius: 2px;
+    visibility: hidden;
+}
+
+.in-container-button-1-p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    width: 900px;
+    padding: 5px;
+    border: 3px solid;
+    border-color: #303030;
+    position: absolute;
+}
+
+.close-button-embed-div{
+    padding: 20px 40px;
+    position: absolute;
+    border-radius: 5px;
+    cursor: pointer;
+    bottom: 5px;
+    left: 5px;
+}
+.close-button-embed-div:hover{
+    background-color: #93f8ff;
+}
+
+.open-popup{
+    visibility: visible;
+}
+</style>
+</html>
